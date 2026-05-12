@@ -24,7 +24,7 @@ function meow(card) {
   if (!bubble) return;
 
   bubble.style.display = 'block';
-  void bubble.offsetWidth;
+  void bubble.offsetWidth; // reflow to re-trigger animation
   bubble.style.animation = 'none';
   void bubble.offsetWidth;
   bubble.style.animation = 'bubblePop 0.25s ease';
