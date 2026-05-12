@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b9d3a10aa9224ba6afdb4c04ec85efc5"}'></script><!-- End Cloudflare Web Analytics -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mochi Cat Café ☕🐱</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@600&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <div id="paws-container"></div>
+
+  <!-- Yara surprise popup -->
+  <div id="yara-popup" onclick="closeYara()">
+    <div class="yara-wrap">
+      <div class="yara-cat-body">
+        <div class="yara-ear yl"></div>
+        <div class="yara-ear yr"></div>
+        <div class="yara-face">
+          <div class="yara-eyes">
+            <div class="yara-eye"><div class="yara-pupil"></div></div>
+            <div class="yara-eye"><div class="yara-pupil"></div></div>
+          </div>
+          <div class="yara-nose"></div>
+          <div class="yara-whiskers">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+          <div class="yara-mouth"></div>
+        </div>
+        <div class="yara-paw-row">🐾</div>
+      </div>
+      <p class="yara-for">this is for</p>
+      <h2 class="yara-name">Yara</h2>
+      <p class="yara-heart">♡</p>
+      <p class="yara-tap">tap anywhere to come inside ~</p>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-tagline">a little place made with love</p>
+      <h1 class="hero-title">Mochi Cat Café</h1>
+      <p class="hero-subtitle">where every cup comes with a purr ☕</p>
+      <!-- hidden #1: hover the dot below -->
+      <span class="hidden-love dark" title="psst">·</span>
+      <a href="#cats" class="btn-hero">come on in ~</a>
+    </div>
+    <div class="hero-cats">
+      <span class="hero-cat" style="left:6%;animation-delay:0s">🐱</span>
+      <span class="hero-cat" style="left:88%;animation-delay:1.6s">😺</span>
+      <span class="hero-cat" style="left:46%;animation-delay:3s">🐾</span>
+    </div>
+  </header>
+
+  <section class="cats-section" id="cats">
+    <h2 class="section-title">meet the residents</h2>
+    <p class="section-sub">click on them — they love the attention~</p>
+    <!-- hidden #2: hover the tiny text below -->
+    <p class="hidden-love-line"><span class="hidden-love light-bg">i love you</span></p>
+    <div class="cats-row">
+
+      <div class="cat-card" onclick="meow(this)">
+        <div class="cat-art" id="mochi-art">
+          <div class="ear l"></div><div class="ear r"></div>
+          <div class="face">
+            <div class="eyes">
+              <div class="eye"><div class="pupil"></div></div>
+              <div class="eye"><div class="pupil"></div></div>
+            </div>
+            <div class="nose"></div>
+            <div class="whiskers">
+              <div class="wrow"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="mouthline"></div>
+          </div>
+          <div class="paws"><span>🐾</span></div>
+        </div>
+        <p class="cat-name">Mochi</p>
+        <p class="cat-bio">loves lattes &amp; long naps</p>
+        <div class="bubble">Mrrroww~ 💛</div>
+      </div>
+
+      <div class="cat-card" onclick="meow(this)">
+        <div class="cat-art" id="biscuit-art">
+          <div class="ear l"></div><div class="ear r"></div>
+          <div class="face">
+            <div class="eyes">
+              <div class="eye"><div class="pupil"></div></div>
+              <div class="eye"><div class="pupil"></div></div>
+            </div>
+            <div class="nose"></div>
+            <div class="whiskers">
+              <div class="wrow"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="mouthline"></div>
+          </div>
+          <div class="paws"><span>🐾</span></div>
+        </div>
+        <p class="cat-name">Biscuit</p>
+        <p class="cat-bio">judges your book choices (gently)</p>
+        <div class="bubble">Nyaaa! 🌸</div>
+      </div>
+
+      <div class="cat-card" onclick="meow(this)">
+        <div class="cat-art" id="fig-art">
+          <div class="ear l"></div><div class="ear r"></div>
+          <div class="face">
+            <div class="eyes">
+              <div class="eye"><div class="pupil"></div></div>
+              <div class="eye"><div class="pupil"></div></div>
+            </div>
+            <div class="nose"></div>
+            <div class="whiskers">
+              <div class="wrow"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="mouthline"></div>
+          </div>
+          <div class="paws"><span>🐾</span></div>
+        </div>
+        <p class="cat-name">Fig</p>
+        <!-- hidden #3: hover Fig's bio -->
+        <p class="cat-bio">sleepy philosopher, expert kneader <span class="hidden-love light-bg sm">i love you</span></p>
+        <div class="bubble">Prrrr... 🍂</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <h2 class="section-title">the menu</h2>
+    <p class="section-sub">made with care, best enjoyed near a cat</p>
+    <div class="menu-grid">
+      <div class="menu-item" onclick="addHeart(this)">
+        <span class="micon">☕</span>
+        <h3>Cat's Paw Latte</h3>
+        <p>oat milk, honey, a swirl of cinnamon</p>
+        <span class="price">¥680</span>
+        <div class="hpop">♡</div>
+      </div>
+      <div class="menu-item" onclick="addHeart(this)">
+        <span class="micon">🍵</span>
+        <h3>Matcha Purr</h3>
+        <p>ceremonial matcha, steamed milk, tiny paw foam art</p>
+        <span class="price">¥720</span>
+        <div class="hpop">♡</div>
+      </div>
+      <div class="menu-item" onclick="addHeart(this)">
+        <span class="micon">🥐</span>
+        <h3>Butter Nap Croissant</h3>
+        <p>flaky, warm, best eaten next to a sleeping cat</p>
+        <span class="price">¥420</span>
+        <div class="hpop">♡</div>
+      </div>
+      <div class="menu-item" onclick="addHeart(this)">
+        <span class="micon">🍰</span>
+        <h3>Klimt Honey Cake</h3>
+        <!-- hidden #4: hover the description -->
+        <p>gold-dusted honey sponge, rose cream, edible petals <span class="hidden-love light-bg sm">i love you</span></p>
+        <span class="price">¥580</span>
+        <div class="hpop">♡</div>
+      </div>
+      <div class="menu-item" onclick="addHeart(this)">
+        <span class="micon">🧋</span>
+        <h3>Mochi Milk Tea</h3>
+        <p>brown sugar boba, fresh mochi, named after our best cat</p>
+        <span class="price">¥650</span>
+        <div class="hpop">♡</div>
+      </div>
+      <div class="menu-item" onclick="addHeart(this)">
+        <span class="micon">🍫</span>
+        <h3>Midnight Cocoa</h3>
+        <p>dark chocolate, lavender, served with a cat-shaped cookie</p>
+        <span class="price">¥560</span>
+        <div class="hpop">♡</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <h2 class="section-title">the gallery wall</h2>
+    <p class="section-sub">art &amp; cats — the two great comforts in life</p>
+    <div class="gallery-inner">
+      <div class="frame-wrap">
+        <div class="frame">
+          <div class="corner tl">✦</div>
+          <div class="corner tr">✦</div>
+          <div class="corner bl">✦</div>
+          <div class="corner br">✦</div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/40/Gustav_Klimt_016.jpg"
+            alt="The Kiss by Gustav Klimt"
+            class="painting"
+          />
+        </div>
+      </div>
+      <div class="painting-info">
+        <p class="ptitle">The Kiss</p>
+        <p class="partist">Gustav Klimt &nbsp;·&nbsp; 1907–08</p>
+        <blockquote class="pquote">
+          "In a world of gold and tenderness,<br />
+          two souls hold each other<br />
+          and nothing else matters."
+          <!-- hidden #5: hover the line below the quote -->
+          <span class="hidden-love dark block">i love you</span>
+        </blockquote>
+        <div class="cat-stamp" onclick="stampHeart(this)">
+          🐱 Mochi approves &nbsp;·&nbsp; click me
+        </div>
+        <div class="stamp-hearts"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-paws">🐾 🐾 🐾</div>
+    <p class="footer-main">made with ♡ for you</p>
+    <p class="footer-sub">every good love story starts with a warm cup of something</p>
+    <p class="footer-nano">— from nano 🐱</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
